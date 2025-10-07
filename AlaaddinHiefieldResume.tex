@@ -1,0 +1,123 @@
+\documentclass[11pt,letterpaper]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.7in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{ulem}
+
+% Formatting
+\pagestyle{empty}
+\setlist[itemize]{leftmargin=*,itemsep=2pt,topsep=4pt,parsep=0pt,after=\vspace{0.5\baselineskip}}
+\titlespacing{\section}{0pt}{12pt}{6pt}
+\titlespacing{\subsection}{0pt}{10pt}{4pt}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\bfseries}{}{0em}{}
+
+% Custom commands
+\newcommand{\resumeSubheading}[4]{
+  \subsection*{#1 \hfill #2}
+  \textit{#3} \hfill \textit{#4}
+}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\LARGE \textbf{Alaaddin Hiefield}} \\
+    \vspace{3pt}
+    Portland, Oregon 97229 $|$ 503-504-3432 $|$ alaaddin.hiefield@gmail.com \\
+    \href{https://linkedin.com/in/alaaddinh/}{linkedin.com/in/alaaddinh/}
+\end{center}
+
+% Qualifications Profile
+\section{Qualifications Profile}
+Software engineer with dual Computer Science and Mechanical Engineering degrees, specializing in distributed systems, multi-threaded applications, and platform modernization. Six years of experience implementing large-scale, multi-tiered software systems in C\# and .NET, with experience spanning desktop applications, cloud services, and developer tooling. Collaborative team member with project coordination experience and strong problem-solving skills.
+
+% Core Technologies
+\section{Core Technologies}
+\begin{itemize}[label={},leftmargin=0pt,itemsep=3pt]
+    \item \textbf{Languages \& Frameworks:} C\#, .NET Core/.NET 8/9, Python, C++, JavaScript
+    \item \textbf{Distributed Systems:} SignalR, Azure Functions, REST APIs, webhooks, microservices, event-driven architecture
+    \item \textbf{Cloud \& DevOps:} Azure (App Insights, Functions, DevOps), AWS (MSK, Lambda), Docker, CI/CD (YAML)
+    \item \textbf{Architecture:} Multi-tiered systems, OOP, service-oriented design, P/Invoke interop
+    \item \textbf{Tools \& Platforms:} MySQL, SQLite, MongoDB, Git, JIRA API, Nuke Build, Google Omaha
+\end{itemize}
+
+% Education
+\section{Education}
+\textbf{Bachelor of Science in Computer Science} (2025) | Oregon State University, Corvallis, OR
+
+\textbf{Bachelor of Science in Mechanical Engineering} (2018) | Oregon State University, Corvallis, OR
+
+\textbf{Certifications:} NCEES Engineer In Training (EIT), 2019
+
+% Professional Experience
+\section{Professional Experience}
+
+\resumeSubheading{Trimble Inc.}{Westminster/Centennial, Colorado}{Software Engineer}{April 2019 -- Present}
+
+\vspace{0.5\baselineskip}
+\textbf{\textit{Platform Modernization Team (June 2023 -- Present)}}
+
+
+\vspace{0.3\baselineskip}
+\textbf{Cloud-Synchronized Desktop Application (Project Lead)}
+\begin{itemize}
+    \item Led project coordination and delivery for multi-tiered file synchronization system in C\#/.NET 9 with desktop client, local API, background Windows service, and cloud integration supporting 50,000 concurrent users
+    \item Designed and implemented atomic file migration SDK with automatic rollback for NTFS, exFAT, and FAT32 filesystems across internal and external drives
+    \item Implemented multi-threaded file monitoring, upload/download operations, and conflict resolution with real-time SignalR notifications
+    \item Managed delivery timelines, conducted stakeholder meetings, and collaborated with architecture, integration, and QA teams
+    \item Integrated Azure Application Insights for distributed logging and monitoring
+\end{itemize}
+
+\vspace{0.3\baselineskip}
+\textbf{Platform Modernization \& Developer Tools}
+\begin{itemize}
+    \item Replaced legacy 6-hour batch system with event-driven Azure Functions using webhooks, achieving near-instantaneous processing
+    \item Designed and own reusable CI/CD pipeline framework in Azure DevOps (YAML) serving multiple project types; serve as team SME reviewing all pipeline-related changes
+    \item Building organization-wide CLI tool using Nuke Build to orchestrate Docker containerization, API deployment, and automated resource provisioning
+    \item Integrated native C++ libraries into C\# applications using P/Invoke wrappers
+\end{itemize}
+
+\vspace{0.5\baselineskip}
+\textbf{\textit{Application Development Team (May 2022 -- June 2023)}}
+
+\begin{itemize}
+    \item Implemented analytics system reducing vendor costs and server load while providing performance insights
+    \item Migrated analytics infrastructure and maintained ETL pipelines for business intelligence
+\end{itemize}
+
+\vspace{0.5\baselineskip}
+\resumeSubheading{Slalom Build}{Denver, Colorado}{Software Engineer}{November 2021 -- May 2022}
+
+\begin{itemize}
+    \item Developed microservices in .NET Core to migrate event-streaming from RabbitMQ to AWS Managed Kafka (MSK)
+    \item Created SDK for internal .NET clients to standardize Kafka event production and consumption
+    \item Built background services enabling zero-downtime migration from legacy infrastructure to AWS MSK
+\end{itemize}
+
+\vspace{0.5\baselineskip}
+\resumeSubheading{Weyerhaeuser}{Centennial/Lebanon, Oregon}{}{June 2016 -- November 2021}
+
+\textit{Software Developer \& SQA Engineer (April 2019 -- November 2021) | Centennial, CO}
+
+\begin{itemize}
+    \item Developed structural analysis APIs in C\# and VB.NET using object-oriented design patterns
+    \item Managed Azure DevOps migration and CI/CD pipeline creation for on-premises deployment
+    \item Implemented test automation frameworks for front-end and back-end validation
+\end{itemize}
+
+\vspace{0.3\baselineskip}
+\textit{Reliability Engineer \& Engineering Intern (June 2016 -- April 2019) | Lebanon, OR}
+
+\begin{itemize}
+    \item Led controls team supporting plant IoT systems and preventative maintenance technologies
+    \item Designed Python/MySQL reporting tool for maintenance management
+\end{itemize}
+
+\end{document}
