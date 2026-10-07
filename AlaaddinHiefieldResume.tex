@@ -51,7 +51,7 @@
 
 % Summary
 \section{Summary}
-Software engineer with 7+ years designing and modernizing reliable, scalable distributed systems and developer platforms in C\# and .NET, with B.S. degrees in Computer Science and Mechanical Engineering. Built the deployment tooling and AI-agent skills behind Trimble's official engine framework and serves as an AI Mentor. Known for collaboration, clear communication with demanding stakeholders, and diving deep into details.
+Software engineer with 7+ years designing and modernizing reliable, scalable distributed systems and developer platforms in C\# and .NET, with B.S. degrees in Computer Science and Mechanical Engineering. Built the deployment tooling and AI-agent skills behind Trimble's official engine framework and serves as the team's AI Mentor. Known for collaboration, clear communication with demanding stakeholders, and diving deep into details.
 
 % Experience
 \section{Professional Experience}
@@ -64,8 +64,8 @@ Maintain and modernize the shared .NET SDK behind Trimble's geospatial apps and 
   \item Led design and development of TEDT, a C\#/.NET CLI that tests, containerizes, and deploys processing engines to AWS or Azure; part of Trimble's official engine toolchain (12+ engines), it cut deploy time from weeks to under an hour
   \item Designed a test-gated release flow: each PR deploys an isolated, GUID-named stack in dependency order, runs end-to-end tests, and tears it down; after merge, tests rerun under production names before manual approval to publish
   \item Wrote the agent skills and docs that teach AI coding agents (Cursor, Copilot) to run TEDT from an AI-first engine template; explicit CLI arguments, not environment variables, keep developer, CI, and agent runs identical
-  \item Appointed AI Mentor for Trimble's Field Systems organization and the team's go-to resource on AI tooling; helped drive adoption of a spec-driven, AI-assisted SDLC that has reduced review time on implementation PRs
-  \item Project lead for a multi-tier, edge-to-cloud sync service (C\#/.NET 9) designed for 50,000 concurrent users and used by \textasciitilde10,000; ran bi-weekly reviews with dependent teams for 14 months and kicked off security review and pen testing
+  \item Selected as the team's AI Mentor in a cross-team Field Systems group that shares AI findings and works to align practices; helped drive the team's move to a spec-driven, AI-assisted SDLC that has cut implementation PR review time
+  \item Project lead for a multi-tier, edge-to-cloud sync service (C\#/.NET 9) designed for 50,000 concurrent users and used by thousands; ran bi-weekly reviews with dependent teams for 14 months and kicked off security review and pen testing
   \item Proposed, designed, and built migration of large geospatial datasets to external drives: a CLI that controls the sync Windows Services and a tray-app SDK, with atomic moves and automatic rollback across NTFS, exFAT, and FAT32
   \item Contributed to multi-threaded file monitoring, transfers, and conflict resolution with real-time SignalR notifications and Application Insights telemetry; owned production support, including off-hours help for teams in Germany
   \item Replaced an unreliable twice-daily batch job (12-hour runs on an aging on-prem server over a 25-year-old, 5M-line codebase) with an event-driven Azure Function that updates referenced Jira issues instantly on each PR merge
